@@ -1,0 +1,34 @@
+{
+  "name": "jobt",
+  "version": "1.0.0",
+  "description": "social for devolopers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server --ignore client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Cherni Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "gravatar": "^1.8.2",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.13"
+  }
+}
